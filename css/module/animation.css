@@ -1,0 +1,15 @@
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.125);
+    }
+}
+
+@keyframes t-rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
