@@ -4,8 +4,10 @@
 @import './module/nav.css';
 @import './module/list.css';
 @import './module/utils.css';
-
+@import './module/banner.css';
+@import './module/text.css';
 @import './module/animation.css';
+@import './module/button.css';
 
 .body {
     

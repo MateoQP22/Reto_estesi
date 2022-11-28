@@ -1,0 +1,137 @@
+.banner {
+    background-image: url('./../../Icon/5072609.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: var(--primary-font-family);
+}
+
+.card {
+
+    border-radius: var(--primary-border-radius);
+    max-width: 320px;
+    overflow: hidden;
+    transition: box-shadow 0.25s;
+
+}
+
+
+.banner__primary-img {
+    display: flex;
+    background-color: var(--primary-background-img);
+    border-radius: 50%;
+    width: 216px;
+    height: 216px;
+}
+
+.hero__decorators {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    animation: t-rotate 10s linear infinite;
+    width: 216px;
+    height: 216px;
+}
+
+.hero__decorator {
+    position: absolute;
+    display: flex;
+}
+
+.hero__decorator:nth-child(1) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.hero__decorator:nth-child(2) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.hero__decorator:nth-child(3) {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.hero__decorator:nth-child(4) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.banner__card {
+    box-shadow:
+        0 0 0.0125rem 0.0625rem var(--primary-shadow-color),
+        0 0 0.25rem 0.125rem var(--primary-shadow-color);
+    border-radius: var(--primary-border-radius);
+    max-width: 320px;
+    overflow: hidden;
+    transition: box-shadow 0.25s;
+}
+
+
+.banner__header,
+.banner__footer {
+    background-color: var(--reverse-primary-shadow-color);
+    padding: 0.5rem 1rem;
+}
+
+
+.banner__title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+
+.banner__body {
+    background-color: var(--reverse-secondary-shadow-color);
+    padding: 1rem;
+}
+
+.banner__img {
+    position: relative;
+    max-width: 256px;
+}
+
+.banner__subtitle {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+
+.banner__text {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 512px;
+    }
+
+    .hero__img {
+        max-width: 320px;
+    }
+
+    .banner__primary-img {
+        width: 325px;
+        height: 325px;
+    }
+
+    .hero__decorators{
+        width: 325px;
+        height: 325px;
+    }
+
+}

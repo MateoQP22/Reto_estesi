@@ -22,4 +22,15 @@
     --padding-container-1: 0 2rem;
     --all-transitions: all 0.25s;
     --font-family: 'Raleway', sans-serif;
+
+    --primary-font-family:'Raleway', sans-serif;
+    
+    --letter-color-1:#bef264;
+    --letter-color-2:#0ea5e9;
+    --letter-color-3:#fdba74;
+    --letter-color-4:#3b82f6;
+    --letter-color-5:#f97316;
+    --letter-color-6:#ef4444;
+    --letter-color-7:#cdcdcd;
+    --letter-color-8:#f6f66f;
     }
