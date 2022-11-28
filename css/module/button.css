@@ -1,23 +1,53 @@
-.button {
-    background-color: var(--primary-theme-color);
-    border: 0.0625rem solid var(--primary-theme-color);
-    border-radius: var(--primary-border-radius);
-    color: var(--primary-text-color);
-    font-family: var(--primary-font-family);
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0.25em 1em;
-    cursor: pointer;
-    transition: box-shadow 0.25s, filter 0.25s;
-  }
-  
-  .button--primary {
-    background-color: var(--primary-highlight-color);
-    border: 0.0625rem solid var(--primary-highlight-color);
-    color: var(--reverse-primary-text-color);
-  }
+.button{
+  background-color: transparent;
+  border: 0.0625rem solid var(--primary-theme-color);
+  border-radius: var(--primary-border-radius);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--primary-font-family);
+  padding: 0.25em 1em;
+  cursor: pointer;
+  transition: box-shadow 0.3s, filter 0.3s, color 0.3s, transform 0.3s ease-in-out;
+}
 
-  .button--primary:hover {
-    box-shadow: 0 0 0.25rem 0.0625rem var(--primary-highlight-color);
-  }
+/* .button:hover{
+  box-shadow: 0 0 0.125rem 0.0625rem var(--secondary-shadow-color);
+  filter: brightness(1.2);
+  color: ;
+  
+} */
+
+.button--primary{
+  background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+  border: 0.0625rem solid var(--primary-button-color);
+  color: var(---reverse-primary-text-color);
+  
+}
+
+/* .button--primary:hover{
+  box-shadow: 0 0 0.125rem 0.0625rem var(--primary-shadow-color);
+  filter: brightness(1.2);
+  color: black;
+} */
+
+.button--primary:hover{
+  box-shadow: 0 0 0.125rem 0.0625rem var(--primary-shadow-color);
+  filter: opacity(0.9);
+  transform: scale(1.2);
+  color: ivory;
+}
+
+
+.button--outline-primary{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+  border: 0.0625rem solid var(#8BC6EC);
+  color: var(--reverse-primary-text-color);
+}
+
+.button--outline-primary:hover{
+  box-shadow: 0 0 0.125rem 0.0625rem var(--primary-shadow-color);
+  filter: brightness(1.2);
+  color: blue;
+}
