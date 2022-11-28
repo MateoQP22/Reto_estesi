@@ -39,8 +39,26 @@
     flex-direction: column;
 }
 
+.g-elements{
+    display: grid;
+}
+
+.g-elements--responsive{
+    grid-template-columns: 100%;
+}
+
+.g-elements--center{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
 @media (min-width: 768px) {
     .f-direction--responsive{
-    flex-direction: column;
+        flex-direction: column;
+    }
+
+    .g-elements--responsive {
+    grid-template-columns: 1fr 1fr; 
     }
 }

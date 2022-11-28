@@ -1,0 +1,80 @@
+.hero__name{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Kumar One Outline', cursive;
+    text-decoration: none;
+    animation: zoom 2s ease-in-out 0s infinite alternate;
+}
+
+.hero__letter{
+    display: inline-flex;
+    position:relative;
+    transition: filter 0.5s ease-in-out, transform 0.5s linear;
+
+}
+
+.hero__letter:hover{ 
+    filter: brightness(3.5);
+
+}
+
+.hero__letter::before{
+    content: var(--letter);
+    position: absolute;
+    left: 0;
+    top:0;
+    filter: blur(0.25rem);
+    transform: scale(1.125);
+}
+
+.hero__letter::after{
+    content: var(--letter);
+    position: absolute;
+    top: 87.5%;
+    left: 0;
+    filter: blur(0.125rem);
+    transform: rotateX(137.5deg);
+}
+
+
+
+
+.hero__letter:nth-child(1){
+    color: var(--letter-color-1);
+}
+
+.hero__letter:nth-child(2){
+    color: var(--letter-color-2);
+}
+
+.hero__letter:nth-child(3){
+    color: var(--letter-color-3);
+}
+
+.hero__letter:nth-child(4){
+    color: var(--letter-color-4);
+}
+
+.hero__letter:nth-child(5){
+    color: var(--letter-color-5);
+}
+
+.hero__letter:nth-child(6){
+    color: var(--letter-color-6);
+}
+
+.hero__letter:nth-child(7){
+    color: var(--letter-color-7);
+}
+
+.hero__letter:nth-child(8){
+    color: var(--letter-color-8);
+}
+
+@media (min-width: 768px) {
+    .hero__name{
+        font-size: 3rem;
+    }
+
+}
