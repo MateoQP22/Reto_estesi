@@ -24,6 +24,15 @@
     --font-family: 'Raleway', sans-serif;
 
     --primary-font-family:'Raleway', sans-serif;
+    --secondary-color: #5bc0eb;
+    --box-shadow: 0px .5px 5px var(--shadow-color);
+    --box-shadow-hover: -5px 5px 10px var(--shadow-color);
+    --text-shadow: -3px 3px 0px var(--shadow-color);
+    --shadow-color:var(--primary-text-color);
+    --font-text-color: #fff;
+    --gap-container: 1rem;
+    --padding-buttons: 0.5em 1em;
+    --primary-color: #e7e7e7;
     
     --letter-color-1:#bef264;
     --letter-color-2:#0ea5e9;
