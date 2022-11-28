@@ -1,0 +1,64 @@
+@import './variables.css';
+@import './module/layout.css';
+@import './module/header.css';
+@import './module/nav.css';
+@import './module/list.css';
+@import './module/utils.css';
+
+@import './module/animation.css';
+
+.body {
+    
+color: black var(--secondary-text-color);
+margin: 0;
+padding: 0;
+font-family: 'Raleway', sans-serif;
+background-color: var(--bg);
+    
+}
+
+.container {
+max-width: var(--max-width-container);
+margin: auto;
+padding-left: var(--padding-container);
+padding-right: var(--padding-container);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.menu {
+display: flex;
+justify-content: center;
+gap: 8.75rem;
+list-style: none;
+margin: 0;
+padding: 0;  
+border-radius: 50%;
+font-size: 0.5rem;
+}
+
+.menu__link {
+    position: relative;
+    transition: 0.25s;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.menu__link:hover {
+    color: var(--primary-highlight-color);
+}
+
+.list__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.125rem;
+    width: 0;
+    height: 0.0625rem;
+    background-color: var(--secondary-highlight-color);
+    transition: width 0.25s;
+}
+
