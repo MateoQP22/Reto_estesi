@@ -9,7 +9,7 @@
 
 .card_1 {
     border-radius: var(--primary-border-radius);
-    max-width: 520px;
+    max-width: 320px;
     overflow: hidden;
     transition: box-shadow 0.25s;
 }
@@ -98,23 +98,26 @@
 .banner__img {
     position: relative;
     max-width: 256px;
+    
 }
 
 .banner__subtitle {
     font-size: 1.25rem;
     text-align: center;
     margin: 0;
+    color: black;
 }
 
 .banner__text {
     font-size: 1rem;
     text-align: justify;
     margin: 0;
+    color: black;
 }
 
 
 @media (min-width: 768px) {
-    .card {
+    .card_1 {
         max-width: 512px;
     }
 

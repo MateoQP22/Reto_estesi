@@ -1,3 +1,11 @@
+.d-none{
+    display: none;
+}
+
+.m-top-auto{
+    margin-top: auto;
+}
+
 .f-direction-column {
     flex-direction: column;
 }
@@ -15,10 +23,17 @@
 
 .gap-lg {
     gap: calc(var(--padding-section) * 1.5);
-  }
+}
 
 @media (min-width: 768px) {
     .md\:f-direction-row{
     flex-direction: row;
     }
+}
+
+@media (min-width: 360px){
+    .md\:d-block{
+        display: grid;
+    }
+
 }
