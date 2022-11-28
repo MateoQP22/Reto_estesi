@@ -10,7 +10,8 @@
 @import './module/button.css';
 @import './module/cards.css';
 @import './module/menu.css';
-
+@import'./module/equipos.css';
+@import'./module/footer.css';
 
 .body{
     background-color: var(--primary-theme-color);
